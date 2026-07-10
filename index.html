@@ -1,1 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ruby | Headhunting services that grow with you</title>
+<meta name="description" content="Ruby onboards you in ten minutes, pulls the market data, and hands you a live game plan for your top five companies. NYC finance, insurance, consulting, and executive and MBA program alumni.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#0D090B">
+<meta property="og:title" content="Ruby | Headhunting services that grow with you">
+<meta property="og:description" content="One dashboard. Your top five companies, a game plan for each, and warm intros drafted when you are close. NYC finance, insurance, and consulting.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%230D090B'/%3E%3Cpath d='M8 1.5 L14.5 8 L8 14.5 L1.5 8 Z' fill='%23E12A47'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://rubysearch.nyc/#org",
+      "name": "Ruby",
+      "slogan": "Headhunting services that grow with you.",
+      "description": "Ruby is a New York City headhunting service for finance, insurance, consulting, and executive and MBA program alumni. Members get a single dashboard with their top five target companies, a live game plan for each, automatic data pulls, and warm intro email drafts when they are close to a dream role. Ruby stays with members from mid level to senior to executive, including adjacent moves.",
+      "url": "https://rubysearch.nyc/",
+      "email": "hello@rubysearch.nyc",
+      "areaServed": { "@type": "City", "name": "New York" },
+      "priceRange": "$0 to $199/month for candidates, custom for employers",
+      "knowsAbout": ["Executive search", "Finance recruiting", "Insurance recruiting", "Consulting careers", "MBA recruiting", "Compensation benchmarking"],
+      "makesOffer": [
+        { "@type": "Offer", "name": "The Bench", "price": "0", "priceCurrency": "USD", "description": "Free candidate membership. Confidential profile, quarterly market pulse, inbound opportunities when a search fits, comp benchmark on request." },
+        { "@type": "Offer", "name": "Concierge", "price": "199", "priceCurrency": "USD", "description": "Monthly membership for the active search. Top 5 dashboard, live data pulls, weekly game plans, warm intro drafts, interview prep, offer negotiation." },
+        { "@type": "Offer", "name": "Partners", "description": "Retained and contingency search for employers hiring from the Ruby bench. Custom pricing." }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://rubysearch.nyc/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "Who pays Ruby?", "acceptedAnswer": { "@type": "Answer", "text": "Employers pay placement fees, the way search has always worked. Concierge is an optional membership for candidates who want the full dashboard and an actively managed hunt. The Bench is free forever." } },
+        { "@type": "Question", "name": "Where does the data come from?", "acceptedAnswer": { "@type": "Answer", "text": "Public hiring signals, filings, alumni networks, comp submissions from members, and Ruby's own placement history. It is pulled automatically and refreshed weekly, so you never open a spreadsheet." } },
+        { "@type": "Question", "name": "Is my search confidential?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Nothing leaves your file without a yes from you first. Your dashboard is yours alone, and Ruby never markets your resume." } },
+        { "@type": "Question", "name": "What if I am not actively looking?", "acceptedAnswer": { "@type": "Answer", "text": "That is exactly when to join the Bench. Ruby watches the market quietly, sends a quarterly pulse for your track, and reaches out only when something genuinely fits." } },
+        { "@type": "Question", "name": "Which markets does Ruby cover?", "acceptedAnswer": { "@type": "Answer", "text": "New York City first: finance, insurance and risk, consulting, and executive and MBA program alumni. New cities open as members move." } }
+      ]
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --carbon:#0D090B;
+  --coal:#160F12;
+  --panel:#1B1216;
+  --bone:#F4EDE3;
+  --smoke:#A69699;
+  --ruby:#E12A47;
+  --ruby-hi:#FF7A8C;
+  --ruby-deep:#6E0E1F;
+  --gold:#D6AE76;
+  --line:rgba(244,237,227,.09);
+  --line-strong:rgba(244,237,227,.16);
+  --radius:20px;
+  --font-d:"Fraunces",Georgia,serif;
+  --font-m:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+body{
+  background:var(--carbon);
+  color:var(--bone);
+  font-family:var(--font-d);
+  font-weight:400;
+  font-size:17px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+body::after{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:2000;opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E");
+}
+::selection{background:var(--ruby);color:var(--bone)}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+.skip{position:absolute;left:-9999px;top:0;background:var(--ruby);color:var(--bone);padding:10px 18px;z-index:3000;font-family:var(--font-m);font-size:13px}
+.skip:focus{left:12px;top:12px}
+:focus-visible{outline:2px solid var(--ruby);outline-offset:3px;border-radius:4px}
 
+.wrap{width:min(1160px,calc(100% - 48px));margin-inline:auto}
+section{padding:clamp(84px,11vw,136px) 0;position:relative}
+
+.eyebrow{
+  font-family:var(--font-m);font-size:11px;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--ruby);display:flex;align-items:center;gap:12px;margin-bottom:22px;
+}
+.eyebrow::after{content:"";height:1px;width:56px;background:var(--ruby);opacity:.5}
+h1,h2,h3{font-weight:480;letter-spacing:-.02em;line-height:1.06;text-wrap:balance}
+h2{font-size:clamp(34px,4.6vw,56px);margin-bottom:18px}
+.lede{color:var(--smoke);font-size:clamp(17px,1.6vw,20px);max-width:62ch;text-wrap:pretty}
+.rub{font-style:italic;color:var(--ruby-hi);font-weight:430}
+.gld{color:var(--gold)}
+.mono{font-family:var(--font-m)}
+
+/* ---------- nav ---------- */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  border-bottom:1px solid transparent;
+  transition:background .35s ease,border-color .35s ease;
+}
+.nav.scrolled{background:rgba(13,9,11,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-color:var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:76px}
+.brand{display:flex;align-items:center;gap:10px;font-size:24px;font-weight:520;letter-spacing:-.01em}
+.brand .gem-dot{color:var(--ruby);font-size:16px;transform:translateY(-1px)}
+.nav-links{display:flex;gap:34px;font-family:var(--font-m);font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--smoke)}
+.nav-links a{transition:color .25s ease}
+.nav-links a:hover{color:var(--bone)}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:var(--font-m);font-size:13px;letter-spacing:.04em;
+  padding:13px 26px;border-radius:999px;border:1px solid transparent;
+  transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease,background .25s ease;
+  white-space:nowrap;
+}
+.btn-r{background:var(--ruby);color:var(--bone)}
+.btn-r:hover{transform:translateY(-2px);box-shadow:0 14px 38px rgba(225,42,71,.32)}
+.btn-o{border-color:var(--line-strong);color:var(--bone)}
+.btn-o:hover{border-color:var(--bone);transform:translateY(-2px)}
+.btn-sm{padding:10px 20px;font-size:12px}
+
+/* ---------- hero ---------- */
+.hero{padding:0;min-height:100svh;display:flex;align-items:center;position:relative;overflow:hidden}
+.hero::before{
+  content:"";position:absolute;inset:-20% -10% auto auto;width:60vw;height:60vw;max-width:900px;max-height:900px;
+  background:radial-gradient(closest-side,rgba(110,14,31,.45),transparent 72%);
+  filter:blur(60px);pointer-events:none;
+}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding:150px 0 90px;position:relative;z-index:1}
+.hero h1{font-size:clamp(46px,6.4vw,86px);margin:0 0 26px}
+.hero .lede{margin-bottom:38px}
+.cta-row{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:54px}
+.stat-row{display:flex;flex-wrap:wrap;border-top:1px solid var(--line)}
+.stat{padding:20px 34px 4px 0;margin-right:34px;border-right:1px solid var(--line)}
+.stat:last-child{border-right:none;margin-right:0}
+.stat b{display:block;font-family:var(--font-m);font-weight:600;font-size:22px;color:var(--gold);letter-spacing:-.02em}
+.stat span{font-family:var(--font-m);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--smoke)}
+
+/* gem stage */
+.gem-stage{position:relative;display:flex;justify-content:center;align-items:center;min-height:420px}
+.gem-glow{position:absolute;width:78%;aspect-ratio:1;border-radius:50%;
+  background:radial-gradient(closest-side,rgba(225,42,71,.34),transparent 70%);
+  filter:blur(46px);animation:pulse 7s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:.75;transform:scale(1)}50%{opacity:1;transform:scale(1.06)}}
+.gem-svg{width:min(400px,86%);position:relative;z-index:1;filter:drop-shadow(0 30px 60px rgba(110,14,31,.45))}
+.gem-svg .facet{stroke:rgba(255,255,255,.10);stroke-width:1}
+.glint{animation:sweep 5.6s ease-in-out infinite}
+@keyframes sweep{0%{transform:translateX(-340px) rotate(16deg)}58%,100%{transform:translateX(520px) rotate(16deg)}}
+.twinkle{transform-box:fill-box;transform-origin:center;animation:tw 3.4s ease-in-out infinite}
+.twinkle.t2{animation-delay:1.1s}.twinkle.t3{animation-delay:2.2s}
+@keyframes tw{0%,100%{opacity:0;transform:scale(.4)}50%{opacity:.9;transform:scale(1)}}
+.gem-chip{
+  position:absolute;z-index:2;font-family:var(--font-m);font-size:11px;letter-spacing:.05em;
+  background:rgba(22,15,18,.88);border:1px solid var(--line-strong);border-radius:999px;
+  padding:9px 15px;color:var(--bone);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  animation:bob 6s ease-in-out infinite;white-space:nowrap;
+}
+.gem-chip .gd{color:var(--ruby)}
+.gc1{top:9%;left:-4%}.gc2{top:44%;right:-7%;animation-delay:1.6s}.gc3{bottom:8%;left:2%;animation-delay:3.1s}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+
+/* ---------- wire marquee ---------- */
+.wire{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;padding:0;background:var(--coal)}
+.wire-in{display:flex;align-items:center}
+.wire-label{
+  flex:none;font-family:var(--font-m);font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--gold);padding:16px 26px;border-right:1px solid var(--line);background:var(--carbon);
+}
+.track-clip{overflow:hidden;flex:1;mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.track{display:flex;gap:56px;width:max-content;padding:16px 0;animation:scroll 44s linear infinite}
+.track span{font-family:var(--font-m);font-size:12px;letter-spacing:.03em;color:var(--smoke);white-space:nowrap}
+.track b{color:var(--bone);font-weight:500}
+.track i{color:var(--ruby);font-style:normal;margin-right:14px}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* ---------- steps ---------- */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:58px}
+.step-card{background:var(--coal);padding:32px 26px 36px;position:relative;transition:background .3s ease}
+.step-card:hover{background:var(--panel)}
+.step-card .n{font-family:var(--font-m);font-size:12px;color:var(--ruby);letter-spacing:.18em;display:block;margin-bottom:44px}
+.step-card h3{font-size:21px;margin-bottom:12px;font-weight:500}
+.step-card p{color:var(--smoke);font-size:14.5px;line-height:1.65}
+
+/* ---------- deck ---------- */
+.deck-sec{background:linear-gradient(180deg,transparent,rgba(110,14,31,.07) 30%,transparent)}
+.deck{
+  margin-top:56px;border:1px solid var(--line-strong);border-radius:var(--radius);
+  background:var(--coal);overflow:hidden;
+  box-shadow:0 40px 120px rgba(0,0,0,.5),0 0 0 1px rgba(225,42,71,.06);
+}
+.chrome{display:flex;align-items:center;gap:14px;padding:14px 20px;border-bottom:1px solid var(--line);background:var(--carbon)}
+.dots{display:flex;gap:7px}
+.dots i{width:11px;height:11px;border-radius:50%;background:var(--panel);border:1px solid var(--line-strong)}
+.dots i:first-child{background:var(--ruby-deep);border-color:var(--ruby-deep)}
+.url{font-family:var(--font-m);font-size:11.5px;color:var(--smoke);letter-spacing:.04em;flex:1;text-align:center}
+.demo-tag{font-family:var(--font-m);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(214,174,118,.35);border-radius:999px;padding:4px 10px}
+.deck-head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 28px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.deck-title{font-family:var(--font-m);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--bone)}
+.deck-title i{color:var(--ruby);font-style:normal;margin-right:10px}
+.deck-meta{display:flex;gap:10px;flex-wrap:wrap}
+.pill{font-family:var(--font-m);font-size:11px;color:var(--smoke);border:1px solid var(--line);border-radius:999px;padding:6px 13px;letter-spacing:.03em}
+.deck-body{display:grid;grid-template-columns:1fr 1.25fr}
+.co-list{border-right:1px solid var(--line)}
+.co-list-h{font-family:var(--font-m);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--smoke);padding:18px 24px 12px}
+.co-row{
+  display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:16px;width:100%;
+  text-align:left;padding:17px 24px;border-top:1px solid var(--line);
+  transition:background .25s ease;position:relative;
+}
+.co-row::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--ruby);opacity:0;transition:opacity .25s ease}
+.co-row:hover{background:rgba(244,237,227,.025)}
+.co-row.active{background:rgba(225,42,71,.06)}
+.co-row.active::before{opacity:1}
+.co-rank{font-family:var(--font-m);font-size:12px;color:var(--smoke)}
+.co-row.active .co-rank{color:var(--ruby)}
+.co-name{font-size:18px;font-weight:500;line-height:1.25}
+.co-role{font-family:var(--font-m);font-size:11px;color:var(--smoke);margin-top:3px;letter-spacing:.02em}
+.co-fit{display:flex;align-items:center;gap:9px}
+.ring{width:42px;height:42px}
+.ring circle{fill:none;stroke-width:3.4;transform:rotate(-90deg);transform-origin:center}
+.ring .bg{stroke:rgba(244,237,227,.1)}
+.ring .fg{stroke:var(--ruby);stroke-linecap:round;stroke-dasharray:113.1;stroke-dashoffset:calc(113.1 * (1 - var(--fit) / 100))}
+.fit-n{font-family:var(--font-m);font-size:13px;font-weight:600;color:var(--bone)}
+.co-status{grid-column:2/4;font-family:var(--font-m);font-size:10.5px;letter-spacing:.06em;color:var(--smoke)}
+.co-status.hot{color:var(--ruby-hi)}
+.plan{padding:28px 30px 34px;min-height:520px;display:flex;flex-direction:column}
+.plan-co{font-size:27px;font-weight:520;letter-spacing:-.01em}
+.plan-role{font-family:var(--font-m);font-size:12px;color:var(--gold);letter-spacing:.08em;text-transform:uppercase;margin:7px 0 20px}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:26px}
+.chip{font-family:var(--font-m);font-size:11px;color:var(--bone);background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:7px 13px;letter-spacing:.02em}
+.plan-h{font-family:var(--font-m);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--smoke);margin-bottom:14px}
+.plan-steps{list-style:none;display:flex;flex-direction:column;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:26px}
+.pstep{display:grid;grid-template-columns:auto auto 1fr;gap:13px;align-items:baseline;background:var(--coal);padding:13px 18px}
+.s-ic{font-size:11px;transform:translateY(-1px)}
+.pstep.done .s-ic::before{content:"◆";color:var(--ruby)}
+.pstep.now .s-ic::before{content:"●";color:var(--ruby-hi);animation:blink 1.6s ease-in-out infinite}
+.pstep.next .s-ic::before{content:"◇";color:var(--smoke)}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.35}}
+.s-tag{font-family:var(--font-m);font-size:10px;letter-spacing:.16em;text-transform:uppercase;width:44px}
+.pstep.done .s-tag{color:var(--smoke)}
+.pstep.now .s-tag{color:var(--ruby-hi)}
+.pstep.next .s-tag{color:var(--smoke);opacity:.7}
+.s-tx{font-size:14.5px;color:var(--bone)}
+.pstep.done .s-tx{color:var(--smoke);text-decoration:line-through;text-decoration-color:rgba(225,42,71,.5);text-decoration-thickness:1px}
+.lock-note{font-family:var(--font-m);font-size:11.5px;color:var(--smoke);border:1px dashed var(--line-strong);border-radius:12px;padding:14px 18px;line-height:1.7;margin-top:auto}
+.lock-note b{color:var(--gold);font-weight:500}
+.draft-zone{margin-top:auto}
+.mail{
+  display:none;border:1px solid var(--line-strong);border-radius:14px;overflow:hidden;
+  background:var(--carbon);margin-bottom:16px;
+}
+.mail.open{display:block;animation:rise .45s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.mail-h{padding:13px 18px;border-bottom:1px solid var(--line);font-family:var(--font-m);font-size:11.5px;color:var(--smoke);display:flex;flex-direction:column;gap:5px}
+.mail-h b{color:var(--bone);font-weight:500}
+.mail-b{padding:18px;font-family:var(--font-m);font-size:12.5px;line-height:1.85;color:var(--bone);white-space:pre-wrap;min-height:150px}
+.mail-b::after{content:"▌";color:var(--ruby);animation:blink 1s steps(1) infinite}
+.mail.done .mail-b::after{content:""}
+.draft-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.copy-btn{display:none}
+.copy-btn.show{display:inline-flex}
+
+/* ---------- grow ---------- */
+.grow-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:start}
+.arc{list-style:none;position:relative;padding-left:34px}
+.arc::before{content:"";position:absolute;left:6px;top:10px;bottom:10px;width:1px;background:linear-gradient(180deg,var(--ruby),var(--ruby-deep))}
+.arc li{position:relative;padding:0 0 40px}
+.arc li:last-child{padding-bottom:0}
+.arc li::before{
+  content:"◆";position:absolute;left:-34px;top:2px;color:var(--ruby);font-size:13px;
+  background:var(--carbon);padding:4px 0;
+}
+.arc .tag{font-family:var(--font-m);font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:8px}
+.arc h3{font-size:23px;font-weight:500;margin-bottom:8px}
+.arc p{color:var(--smoke);font-size:15px;max-width:46ch}
+
+/* ---------- tracks ---------- */
+.tracks{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;margin-top:56px}
+.track-card{
+  border:1px solid var(--line);border-radius:var(--radius);padding:30px 28px 32px;
+  background:linear-gradient(180deg,rgba(244,237,227,.03),transparent 60%);
+  transition:transform .3s ease,border-color .3s ease;
+}
+.track-card:hover{transform:translateY(-5px);border-color:rgba(225,42,71,.4)}
+.track-card .t{font-family:var(--font-m);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ruby);display:block;margin-bottom:20px}
+.track-card h3{font-size:22px;font-weight:500;margin-bottom:12px}
+.track-card p{color:var(--smoke);font-size:14.5px;margin-bottom:20px}
+.track-card .desks{font-family:var(--font-m);font-size:11px;line-height:1.9;color:var(--smoke);border-top:1px solid var(--line);padding-top:16px}
+.track-card .desks b{color:var(--gold);font-weight:500;letter-spacing:.1em;text-transform:uppercase;font-size:10px;display:block;margin-bottom:4px}
+
+/* ---------- pricing ---------- */
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:22px;margin-top:56px;align-items:stretch}
+.plan-card{
+  border:1px solid var(--line);border-radius:var(--radius);padding:34px 30px;
+  background:var(--coal);display:flex;flex-direction:column;position:relative;
+}
+.plan-card.hot{border-color:rgba(225,42,71,.55);background:linear-gradient(180deg,rgba(225,42,71,.08),var(--coal) 45%);box-shadow:0 30px 80px rgba(110,14,31,.25)}
+.badge{
+  position:absolute;top:-13px;left:28px;font-family:var(--font-m);font-size:10px;letter-spacing:.18em;
+  text-transform:uppercase;background:var(--ruby);color:var(--bone);border-radius:999px;padding:6px 14px;
+}
+.plan-name{font-family:var(--font-m);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--smoke);margin-bottom:16px}
+.plan-card.hot .plan-name{color:var(--ruby-hi)}
+.price{font-size:44px;font-weight:520;letter-spacing:-.03em;line-height:1;margin-bottom:6px}
+.price small{font-family:var(--font-m);font-size:12px;color:var(--smoke);letter-spacing:.04em;font-weight:400}
+.plan-for{color:var(--smoke);font-size:14px;margin-bottom:24px}
+.feat{list-style:none;display:flex;flex-direction:column;gap:12px;margin-bottom:30px}
+.feat li{display:flex;gap:12px;font-size:14.5px;color:var(--bone);line-height:1.5}
+.feat li::before{content:"◆";color:var(--ruby);font-size:10px;transform:translateY(4px)}
+.plan-foot{margin-top:auto}
+.plan-note{font-family:var(--font-m);font-size:11px;color:var(--gold);margin-top:14px;letter-spacing:.03em}
+
+/* ---------- join ---------- */
+.join-sec{background:linear-gradient(180deg,transparent,rgba(110,14,31,.09) 50%,transparent)}
+.join-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:70px;align-items:start}
+.assure{list-style:none;display:flex;flex-direction:column;gap:12px;margin-top:30px}
+.assure li{display:flex;gap:12px;color:var(--smoke);font-size:15px}
+.assure li::before{content:"◆";color:var(--ruby);font-size:10px;transform:translateY(5px)}
+.form-card{border:1px solid var(--line-strong);border-radius:var(--radius);background:var(--coal);padding:36px 32px;box-shadow:0 40px 110px rgba(0,0,0,.45)}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.field{display:flex;flex-direction:column;gap:8px;margin-bottom:18px}
+.field label{font-family:var(--font-m);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--smoke)}
+.field input,.field select{
+  background:var(--carbon);border:1px solid var(--line-strong);border-radius:12px;
+  padding:14px 16px;color:var(--bone);font-family:var(--font-m);font-size:14px;
+  transition:border-color .25s ease;width:100%;appearance:none;-webkit-appearance:none;
+}
+.field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23A69699'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center}
+.field input::placeholder{color:rgba(166,150,153,.55)}
+.field input:focus,.field select:focus{border-color:var(--ruby);outline:none}
+.form-sub{width:100%;justify-content:center;margin-top:6px}
+.fine{font-family:var(--font-m);font-size:11px;color:var(--smoke);text-align:center;margin-top:16px;letter-spacing:.03em}
+.success{display:none;text-align:left;padding:14px 4px}
+.success h3{font-size:30px;margin-bottom:14px;font-weight:500}
+.success p{color:var(--smoke);font-size:15.5px;margin-bottom:12px}
+.success .mono{color:var(--gold);font-size:13px}
+.form-wrap.done form{display:none}
+.form-wrap.done .success{display:block;animation:rise .5s ease both}
+
+/* ---------- faq ---------- */
+.faq{max-width:780px;margin:56px auto 0}
+.faq details{border-top:1px solid var(--line)}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{
+  cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;
+  padding:26px 4px;font-size:19px;font-weight:480;transition:color .25s ease;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--font-m);color:var(--ruby);font-size:20px;transition:transform .3s ease}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq summary:hover{color:var(--ruby-hi)}
+.faq .a{padding:0 4px 28px;color:var(--smoke);font-size:15.5px;max-width:64ch}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--line);padding:70px 0 46px;background:var(--coal)}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:44px;margin-bottom:56px}
+.foot-brand p{color:var(--smoke);font-size:15px;margin-top:14px;max-width:34ch}
+.foot-h{font-family:var(--font-m);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+.foot-links{list-style:none;display:flex;flex-direction:column;gap:12px}
+.foot-links a{color:var(--smoke);font-size:15px;transition:color .25s ease}
+.foot-links a:hover{color:var(--bone)}
+.foot-base{border-top:1px solid var(--line);padding-top:26px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:var(--font-m);font-size:11px;color:var(--smoke);letter-spacing:.04em}
+
+/* ---------- reveal ---------- */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.6,.2,1),transform .8s cubic-bezier(.2,.6,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}
+
+/* ---------- responsive ---------- */
+@media (max-width:980px){
+  .hero-grid{grid-template-columns:1fr;padding-top:130px}
+  .gem-stage{min-height:340px;order:-1}
+  .gem-svg{width:min(300px,70%)}
+  .deck-body{grid-template-columns:1fr}
+  .co-list{border-right:none;border-bottom:1px solid var(--line)}
+  .grow-grid,.join-grid{grid-template-columns:1fr;gap:44px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .nav-links{display:none}
+  .f-row{grid-template-columns:1fr}
+  .stat{padding-right:22px;margin-right:22px}
+  .plan{min-height:0}
+  .gc1{left:0}.gc2{right:0}
+  .foot-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="Ruby, home"><span class="gem-dot">◆</span>Ruby</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#how">How it works</a>
+      <a href="#deck">Dashboard</a>
+      <a href="#grow">The long game</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-r btn-sm" href="#join">Join Ruby</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">New York City · Finance · Insurance · Consulting</p>
+      <h1>Headhunting services that <span class="rub">grow with you.</span></h1>
+      <p class="lede">Ruby onboards you in ten minutes, pulls the market for you, and hands you a living game plan for your top five companies. When you are close to the dream role, Ruby drafts the warm intro that gets you on the call. Your time stays on the work that matters.</p>
+      <div class="cta-row">
+        <a class="btn btn-r" href="#join">Join Ruby ◆</a>
+        <a class="btn btn-o" href="#deck">Tour the dashboard</a>
+      </div>
+      <div class="stat-row">
+        <div class="stat"><b>10 min</b><span>to onboard</span></div>
+        <div class="stat"><b>48 hrs</b><span>to your Top 5</span></div>
+        <div class="stat"><b>5 plans</b><span>always live</span></div>
+        <div class="stat"><b>1 click</b><span>warm intros</span></div>
+      </div>
+    </div>
+
+    <div class="gem-stage" aria-hidden="true">
+      <div class="gem-glow"></div>
+      <svg class="gem-svg" viewBox="0 0 440 410" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Faceted ruby gemstone">
+        <defs>
+          <linearGradient id="gA" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#FF8A9A"/><stop offset="1" stop-color="#E12A47"/>
+          </linearGradient>
+          <linearGradient id="gB" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#E12A47"/><stop offset="1" stop-color="#9E142E"/>
+          </linearGradient>
+          <linearGradient id="gC" x1="1" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#C21E3C"/><stop offset="1" stop-color="#6E0E1F"/>
+          </linearGradient>
+          <linearGradient id="gD" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#8E1024"/><stop offset="1" stop-color="#3E0611"/>
+          </linearGradient>
+          <clipPath id="gemClip">
+            <path d="M150 64 L290 64 L370 168 L220 372 L70 168 Z"/>
+          </clipPath>
+        </defs>
+        <ellipse cx="220" cy="392" rx="132" ry="13" fill="rgba(0,0,0,.55)"/>
+        <g>
+          <polygon class="facet" points="150,64 70,168 170,168" fill="url(#gB)"/>
+          <polygon class="facet" points="150,64 290,64 270,168 170,168" fill="url(#gA)"/>
+          <polygon class="facet" points="290,64 370,168 270,168" fill="url(#gC)"/>
+          <polygon class="facet" points="70,168 170,168 220,372" fill="url(#gD)"/>
+          <polygon class="facet" points="170,168 270,168 220,372" fill="url(#gB)"/>
+          <polygon class="facet" points="270,168 370,168 220,372" fill="url(#gD)"/>
+          <polygon points="178,80 262,80 252,120 188,120" fill="rgba(255,255,255,.14)"/>
+        </g>
+        <g clip-path="url(#gemClip)">
+          <rect class="glint" x="140" y="-60" width="64" height="540" fill="rgba(255,255,255,.16)"/>
+        </g>
+        <g fill="#FFD9DF">
+          <path class="twinkle" d="M120 120 l3.5 9 9 3.5 -9 3.5 -3.5 9 -3.5 -9 -9 -3.5 9 -3.5 Z"/>
+          <path class="twinkle t2" d="M312 210 l3 7.5 7.5 3 -7.5 3 -3 7.5 -3 -7.5 -7.5 -3 7.5 -3 Z"/>
+          <path class="twinkle t3" d="M212 300 l2.5 6.5 6.5 2.5 -6.5 2.5 -2.5 6.5 -2.5 -6.5 -6.5 -2.5 6.5 -2.5 Z"/>
+        </g>
+      </svg>
+      <span class="gem-chip gc1"><span class="gd">◆</span> Fit 96 · Apollo, Director</span>
+      <span class="gem-chip gc2">3 openings pulled today</span>
+      <span class="gem-chip gc3">Warm path found: Maya R.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WIRE ============ -->
+<div class="wire" aria-label="Moves Ruby makes">
+  <div class="wire-in">
+    <span class="wire-label">Moves we make</span>
+    <div class="track-clip">
+      <div class="track">
+        <span><i>◆</i>Associate to <b>VP, Private Credit</b> in five weeks</span>
+        <span><i>◆</i>Engagement Manager to <b>Principal, FS Strategy</b></span>
+        <span><i>◆</i>SVP to <b>Managing Director, Specialty Insurance</b></span>
+        <span><i>◆</i>MBA class of 2025 to <b>Consultant, top firm</b></span>
+        <span><i>◆</i>Director to <b>Partner</b>, adjacent move into private credit</span>
+        <span><i>◆</i>VP, Credit Risk to <b>Director, Hybrid Credit</b></span>
+        <span><i>◆</i>Associate to <b>VP, Private Credit</b> in five weeks</span>
+        <span><i>◆</i>Engagement Manager to <b>Principal, FS Strategy</b></span>
+        <span><i>◆</i>SVP to <b>Managing Director, Specialty Insurance</b></span>
+        <span><i>◆</i>MBA class of 2025 to <b>Consultant, top firm</b></span>
+        <span><i>◆</i>Director to <b>Partner</b>, adjacent move into private credit</span>
+        <span><i>◆</i>VP, Credit Risk to <b>Director, Hybrid Credit</b></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HOW ============ -->
+<section id="how">
+  <div class="wrap">
+    <p class="eyebrow reveal">The system</p>
+    <h2 class="reveal">Ten minutes in. <span class="rub">A career of moves</span> out.</h2>
+    <p class="lede reveal d1">The job hunt eats a hundred hours of tabs, trackers, and cold applications. Ruby runs the whole thing from one place, so you spend your evenings on the interview, not the spreadsheet.</p>
+    <div class="steps">
+      <article class="step-card reveal">
+        <span class="n">01 / Inbound</span>
+        <h3>Tell Ruby who you are</h3>
+        <p>Ten minutes, once. Your resume, your goals, your comp floor, your dream list. That becomes your file, and your file does the work from here.</p>
+      </article>
+      <article class="step-card reveal d1">
+        <span class="n">02 / The pull</span>
+        <h3>Ruby pulls the data</h3>
+        <p>Open roles, hiring signals, comp bands, mutual contacts. Pulled automatically, refreshed weekly. You never open a spreadsheet again.</p>
+      </article>
+      <article class="step-card reveal d2">
+        <span class="n">03 / The plan</span>
+        <h3>Work your Top 5</h3>
+        <p>Five companies, one live game plan each. Log in and see exactly where you stand and what happens next, in one dashboard.</p>
+      </article>
+      <article class="step-card reveal d3">
+        <span class="n">04 / The intro</span>
+        <h3>Warm intros, drafted</h3>
+        <p>Close to the dream role, Ruby drafts the warm intro email that gets you on a call. You review, send, and book the coffee.</p>
+      </article>
+      <article class="step-card reveal d4">
+        <span class="n">05 / The loop</span>
+        <h3>Placed, then promoted</h3>
+        <p>An offer is not the end of the file. Ruby stays with you from mid level to senior to the corner office, and runs it all again at every level.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DECK ============ -->
+<section id="deck" class="deck-sec">
+  <div class="wrap">
+    <p class="eyebrow reveal">The dashboard</p>
+    <h2 class="reveal">One login. <span class="rub">Your whole hunt.</span></h2>
+    <p class="lede reveal d1">This is the Command Deck. Your top five companies, a live game plan for each, and every data point already pulled. Click around, it is a working demo.</p>
+
+    <div class="deck reveal d2">
+      <div class="chrome">
+        <span class="dots"><i></i><i></i><i></i></span>
+        <span class="url">app.rubysearch.nyc/deck</span>
+        <span class="demo-tag">Demo data</span>
+      </div>
+      <div class="deck-head">
+        <span class="deck-title"><i>◆</i>Command Deck</span>
+        <div class="deck-meta">
+          <span class="pill">J. Meyer · VP, Credit Risk</span>
+          <span class="pill">Week of Jul 6</span>
+        </div>
+      </div>
+      <div class="deck-body">
+        <div class="co-list" role="tablist" aria-label="Top five target companies">
+          <p class="co-list-h">Top 5 targets</p>
+
+          <button class="co-row active" data-co="apollo" role="tab" aria-selected="true">
+            <span class="co-rank">01</span>
+            <span><span class="co-name">Apollo Global Management</span><span class="co-role" style="display:block">Director, Hybrid Credit</span></span>
+            <span class="co-fit"><svg class="ring" viewBox="0 0 44 44" aria-hidden="true"><circle class="bg" cx="22" cy="22" r="18"/><circle class="fg" cx="22" cy="22" r="18" style="--fit:96"/></svg><span class="fit-n">96</span></span>
+            <span class="co-status hot">● Warm path live</span>
+          </button>
+
+          <button class="co-row" data-co="blackstone" role="tab" aria-selected="false">
+            <span class="co-rank">02</span>
+            <span><span class="co-name">Blackstone</span><span class="co-role" style="display:block">Vice President, Private Credit</span></span>
+            <span class="co-fit"><svg class="ring" viewBox="0 0 44 44" aria-hidden="true"><circle class="bg" cx="22" cy="22" r="18"/><circle class="fg" cx="22" cy="22" r="18" style="--fit:91"/></svg><span class="fit-n">91</span></span>
+            <span class="co-status">2 openings watched</span>
+          </button>
+
+          <button class="co-row" data-co="chubb" role="tab" aria-selected="false">
+            <span class="co-rank">03</span>
+            <span><span class="co-name">Chubb</span><span class="co-role" style="display:block">Senior Director, Specialty Risk</span></span>
+            <span class="co-fit"><svg class="ring" viewBox="0 0 44 44" aria-hidden="true"><circle class="bg" cx="22" cy="22" r="18"/><circle class="fg" cx="22" cy="22" r="18" style="--fit:88"/></svg><span class="fit-n">88</span></span>
+            <span class="co-status">Panel intro pending</span>
+          </button>
+
+          <button class="co-row" data-co="kkr" role="tab" aria-selected="false">
+            <span class="co-rank">04</span>
+            <span><span class="co-name">KKR</span><span class="co-role" style="display:block">Principal, Insurance Solutions</span></span>
+            <span class="co-fit"><svg class="ring" viewBox="0 0 44 44" aria-hidden="true"><circle class="bg" cx="22" cy="22" r="18"/><circle class="fg" cx="22" cy="22" r="18" style="--fit:85"/></svg><span class="fit-n">85</span></span>
+            <span class="co-status">Comp intel fresh</span>
+          </button>
+
+          <button class="co-row" data-co="ow" role="tab" aria-selected="false">
+            <span class="co-rank">05</span>
+            <span><span class="co-name">Oliver Wyman</span><span class="co-role" style="display:block">Principal track, FS Practice</span></span>
+            <span class="co-fit"><svg class="ring" viewBox="0 0 44 44" aria-hidden="true"><circle class="bg" cx="22" cy="22" r="18"/><circle class="fg" cx="22" cy="22" r="18" style="--fit:82"/></svg><span class="fit-n">82</span></span>
+            <span class="co-status">Bench, revisit Q4</span>
+          </button>
+        </div>
+
+        <div class="plan" aria-live="polite">
+          <h3 class="plan-co" id="planName">Apollo Global Management</h3>
+          <p class="plan-role" id="planRole">Director, Hybrid Credit</p>
+          <div class="chips" id="planChips"></div>
+          <p class="plan-h">Game plan</p>
+          <ul class="plan-steps" id="planSteps"></ul>
+
+          <div class="draft-zone" id="draftZone">
+            <div class="mail" id="mailWin">
+              <div class="mail-h">
+                <span>To: <b>Maya R.</b> · former colleague, 2nd degree at Apollo</span>
+                <span>Subject: <b>Quick favor, Apollo hybrid credit</b></span>
+              </div>
+              <div class="mail-b" id="mailBody"></div>
+            </div>
+            <div class="draft-row">
+              <button class="btn btn-r" id="draftBtn">Draft warm intro ◆</button>
+              <button class="btn btn-o copy-btn" id="copyBtn">Copy draft</button>
+            </div>
+          </div>
+
+          <p class="lock-note" id="lockNote" style="display:none">◆ <b>Intro drafts unlock in the final stretch.</b> When a target hits fit 95 plus, or a warm path goes live, Ruby writes the email that gets you on the call.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GROW ============ -->
+<section id="grow">
+  <div class="wrap grow-grid">
+    <div>
+      <p class="eyebrow reveal">The long game</p>
+      <h2 class="reveal">Loyalty is <span class="rub">the product.</span></h2>
+      <p class="lede reveal d1">Most recruiters vanish after the invoice clears. Ruby is built on the opposite bet: earn your trust at mid level, keep it through senior, and be the first call for every move after. One relationship. One file. Compounding for your whole career.</p>
+      <div class="cta-row reveal d2" style="margin-top:34px">
+        <a class="btn btn-o" href="#join">Start your file</a>
+      </div>
+    </div>
+    <ol class="arc">
+      <li class="reveal">
+        <span class="tag">Mid level</span>
+        <h3>The first move</h3>
+        <p>Ruby places you into the right senior seat, not just the open one. This is where the file starts and the trust is earned.</p>
+      </li>
+      <li class="reveal d1">
+        <span class="tag">Senior</span>
+        <h3>The quiet climb</h3>
+        <p>Your file stays warm. Ruby runs discreet searches while you work, and surfaces only what clears your bar.</p>
+      </li>
+      <li class="reveal d2">
+        <span class="tag">Executive</span>
+        <h3>Up and adjacent</h3>
+        <p>MD, partner, or the strategy seat next door. Ruby maps the adjacent moves most people never see, across finance, insurance, and consulting.</p>
+      </li>
+      <li class="reveal d3">
+        <span class="tag">Beyond</span>
+        <h3>Wherever you grow</h3>
+        <p>Board seats, LP roles, a teaching chair uptown. Ruby grows with you, because your next search is already on file.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ TRACKS ============ -->
+<section id="tracks" style="padding-top:0">
+  <div class="wrap">
+    <p class="eyebrow reveal">Where we hunt</p>
+    <h2 class="reveal">Four tracks. <span class="rub">One city.</span></h2>
+    <p class="lede reveal d1">Ruby is built for New York first, deep in the rooms where the offers actually get made.</p>
+    <div class="tracks">
+      <article class="track-card reveal">
+        <span class="t">Track 01</span>
+        <h3>NYC Finance</h3>
+        <p>Banks, private equity, private credit, and the funds in between. Associate through Managing Director.</p>
+        <p class="desks"><b>Desks we watch</b>Goldman Sachs · Blackstone · Apollo · KKR · Citadel · Morgan Stanley</p>
+      </article>
+      <article class="track-card reveal d1">
+        <span class="t">Track 02</span>
+        <h3>Insurance &amp; Risk</h3>
+        <p>Carriers, brokers, and reinsurance. The quiet market where specialty talent commands a premium.</p>
+        <p class="desks"><b>Desks we watch</b>Chubb · AIG · Marsh McLennan · Aon · Swiss Re · Travelers</p>
+      </article>
+      <article class="track-card reveal d2">
+        <span class="t">Track 03</span>
+        <h3>MBA &amp; Consulting</h3>
+        <p>Post-MBA into the top firms, and consultant exits into the strategy seats that follow.</p>
+        <p class="desks"><b>Desks we watch</b>McKinsey · Bain · BCG · Oliver Wyman · EY-Parthenon · the exits</p>
+      </article>
+      <article class="track-card reveal d3">
+        <span class="t">Track 04</span>
+        <h3>Executive Programs</h3>
+        <p>EMBA and exec ed alumni positioning for the jump. Ruby maps your landing spots before you graduate.</p>
+        <p class="desks"><b>Programs we serve</b>Columbia · Wharton · HBS Exec Ed · Kellogg EMBA · NYU Stern</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section id="pricing" style="padding-top:0">
+  <div class="wrap">
+    <p class="eyebrow reveal">Pricing</p>
+    <h2 class="reveal">Simple, <span class="rub">like it should be.</span></h2>
+    <p class="lede reveal d1">Employers pay for placements. You pay only if you want the full Concierge hunt. The Bench is free forever.</p>
+    <div class="plans">
+      <article class="plan-card reveal">
+        <p class="plan-name">The Bench</p>
+        <p class="price">$0 <small>forever</small></p>
+        <p class="plan-for">For the not yet looking.</p>
+        <ul class="feat">
+          <li>Confidential profile on the bench</li>
+          <li>Quarterly market pulse for your track</li>
+          <li>Inbound reach outs when a search fits</li>
+          <li>Comp benchmark on request</li>
+        </ul>
+        <div class="plan-foot">
+          <a class="btn btn-o" href="#join" style="width:100%;justify-content:center">Join free</a>
+        </div>
+      </article>
+      <article class="plan-card hot reveal d1">
+        <span class="badge">For the active search</span>
+        <p class="plan-name">Concierge</p>
+        <p class="price">$199 <small>per month</small></p>
+        <p class="plan-for">The full hunt, actively managed.</p>
+        <ul class="feat">
+          <li>Top 5 dashboard, refreshed weekly</li>
+          <li>Live data pulls: openings, comp, contacts</li>
+          <li>Game plans with a Ruby partner behind them</li>
+          <li>Warm intro drafts when you are close</li>
+          <li>Interview prep and offer negotiation</li>
+        </ul>
+        <div class="plan-foot">
+          <a class="btn btn-r" href="#join" style="width:100%;justify-content:center">Start Concierge ◆</a>
+          <p class="plan-note">Most members land inside 90 days. Cancel anytime.</p>
+        </div>
+      </article>
+      <article class="plan-card reveal d2">
+        <p class="plan-name">Partners</p>
+        <p class="price">Custom</p>
+        <p class="plan-for">For employers hiring from the bench.</p>
+        <ul class="feat">
+          <li>Retained and contingency search</li>
+          <li>Mid level through C-suite</li>
+          <li>Finance, insurance, and consulting</li>
+          <li>A bench that already trusts us</li>
+        </ul>
+        <div class="plan-foot">
+          <a class="btn btn-o" href="mailto:hello@rubysearch.nyc?subject=Hiring%20from%20Ruby" style="width:100%;justify-content:center">Hire from Ruby</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JOIN ============ -->
+<section id="join" class="join-sec">
+  <div class="wrap join-grid">
+    <div>
+      <p class="eyebrow reveal">Start</p>
+      <h2 class="reveal">Ten minutes now. <span class="rub">Hours back</span> every week.</h2>
+      <p class="lede reveal d1">Tell Ruby who you are and where you want to end up. Your Top 5 and a game plan for each land within 48 hours.</p>
+      <ul class="assure reveal d2">
+        <li>Free to join, confidential from the first click</li>
+        <li>Nothing shared without a yes from you</li>
+        <li>No resume spam. Ever.</li>
+      </ul>
+    </div>
+    <div class="form-card form-wrap reveal d2" id="formWrap">
+      <form id="joinForm" novalidate>
+        <div class="f-row">
+          <div class="field">
+            <label for="fName">First name</label>
+            <input id="fName" name="name" type="text" placeholder="Jordan" autocomplete="given-name" required>
+          </div>
+          <div class="field">
+            <label for="fEmail">Work email</label>
+            <input id="fEmail" name="email" type="email" placeholder="you@firm.com" autocomplete="email" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="fLinked">LinkedIn URL <span style="text-transform:none;letter-spacing:0">(optional)</span></label>
+          <input id="fLinked" name="linkedin" type="url" placeholder="linkedin.com/in/you">
+        </div>
+        <div class="f-row">
+          <div class="field">
+            <label for="fLevel">Current level</label>
+            <select id="fLevel" name="level" required>
+              <option value="">Select</option>
+              <option>Mid level</option>
+              <option>Senior</option>
+              <option>Executive</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="fTrack">Track</label>
+            <select id="fTrack" name="track" required>
+              <option value="">Select</option>
+              <option>NYC Finance</option>
+              <option>Insurance &amp; Risk</option>
+              <option>MBA &amp; Consulting</option>
+              <option>Executive Programs</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="fTargets">Dream companies <span style="text-transform:none;letter-spacing:0">(optional)</span></label>
+          <input id="fTargets" name="targets" type="text" placeholder="Apollo, Chubb, McKinsey">
+        </div>
+        <button class="btn btn-r form-sub" type="submit">Get my Top 5 ◆</button>
+        <p class="fine">Free to join. Your file stays confidential.</p>
+      </form>
+      <div class="success" role="status">
+        <h3>Welcome to the bench, <span class="rub" id="okName">friend</span>.</h3>
+        <p>Your Top 5 lands at <span class="gld mono" id="okEmail"></span> within 48 hours. The first pull is always the best one.</p>
+        <p class="mono">◆ Prefer email? <a href="mailto:hello@rubysearch.nyc" style="text-decoration:underline">hello@rubysearch.nyc</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" style="padding-top:0">
+  <div class="wrap">
+    <p class="eyebrow reveal" style="justify-content:center">Questions</p>
+    <h2 class="reveal" style="text-align:center">Fair questions, <span class="rub">straight answers.</span></h2>
+    <div class="faq reveal d1">
+      <details>
+        <summary>Who pays Ruby?</summary>
+        <p class="a">Employers pay placement fees, the way search has always worked. Concierge is an optional membership for candidates who want the full dashboard and an actively managed hunt. The Bench is free forever.</p>
+      </details>
+      <details>
+        <summary>Where does the data come from?</summary>
+        <p class="a">Public hiring signals, filings, alumni networks, comp submissions from members, and Ruby's own placement history. It is pulled automatically and refreshed weekly, so you never open a spreadsheet.</p>
+      </details>
+      <details>
+        <summary>Is my search confidential?</summary>
+        <p class="a">Yes. Nothing leaves your file without a yes from you first. Your dashboard is yours alone, and Ruby never markets your resume.</p>
+      </details>
+      <details>
+        <summary>What if I am not actively looking?</summary>
+        <p class="a">That is exactly when to join the Bench. Ruby watches the market quietly, sends a quarterly pulse for your track, and reaches out only when something genuinely fits.</p>
+      </details>
+      <details>
+        <summary>Which markets does Ruby cover?</summary>
+        <p class="a">New York City first: finance, insurance and risk, consulting, and executive and MBA program alumni. New cities open as members move.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="#top"><span class="gem-dot">◆</span>Ruby</a>
+        <p>Headhunting services that grow with you. Save your time for the work that matters.</p>
+      </div>
+      <div>
+        <p class="foot-h">Product</p>
+        <ul class="foot-links">
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#deck">Dashboard</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#join">Join Ruby</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="foot-h">Company</p>
+        <ul class="foot-links">
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="mailto:hello@rubysearch.nyc">hello@rubysearch.nyc</a></li>
+          <li><a href="#grow">The long game</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© <span id="yr">2026</span> Ruby Search Group · New York City</span>
+      <span>Readable by humans and their agents · <a href="llms.txt" style="text-decoration:underline">llms.txt</a> · JSON-LD onboard</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  // Optional: paste a Formspree or similar endpoint to receive submissions.
+  var FORM_ENDPOINT = "";
+
+  var $ = function (s, c) { return (c || document).querySelector(s); };
+  var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
+
+  var reduced = false;
+  try {
+    reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  } catch (e) { reduced = false; }
+
+  // Footer year
+  var yr = $("#yr");
+  if (yr) { yr.textContent = String(new Date().getFullYear()); }
+
+  // Nav state on scroll
+  var nav = $("#nav");
+  function onScroll() {
+    if (!nav) { return; }
+    if (window.scrollY > 12) { nav.classList.add("scrolled"); }
+    else { nav.classList.remove("scrolled"); }
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+
+  // Scroll reveals
+  var revealEls = $$(".reveal");
+  if ("IntersectionObserver" in window && !reduced) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) {
+          en.target.classList.add("in");
+          io.unobserve(en.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(function (el) { io.observe(el); });
+  } else {
+    revealEls.forEach(function (el) { el.classList.add("in"); });
+  }
+
+  // -------- Command Deck demo --------
+  var COS = {
+    apollo: {
+      name: "Apollo Global Management",
+      role: "Director, Hybrid Credit",
+      chips: ["3 open roles", "Comp $450-600K", "2 mutual contacts", "Signal: hiring up"],
+      plan: [
+        ["done", "Position brief built from the JD and three years of desk history"],
+        ["done", "Mutual contacts mapped: Maya R. and Dan Reyes"],
+        ["now", "Send the warm intro to Maya R."],
+        ["next", "Twenty minute call, then apply with the referral attached"],
+        ["next", "Case prep: your hybrid credit view for the onsite loop"]
+      ],
+      draft: true
+    },
+    blackstone: {
+      name: "Blackstone",
+      role: "Vice President, Private Credit",
+      chips: ["2 open roles", "Comp $400-550K", "1 mutual contact", "Signal: steady"],
+      plan: [
+        ["done", "Comp band confirmed against 11 member data points"],
+        ["now", "Watching two VP requisitions on the private credit desk"],
+        ["next", "Alumni breakfast on Oct 2, your RSVP is open"],
+        ["next", "One pager tailored to the credit mandate"]
+      ],
+      draft: false
+    },
+    chubb: {
+      name: "Chubb",
+      role: "Senior Director, Specialty Risk",
+      chips: ["4 open roles", "Comp $310-420K", "3 mutual contacts", "Signal: expanding"],
+      plan: [
+        ["done", "Specialty risk org chart rebuilt from scratch"],
+        ["now", "Panel intro pending through a Ruby partner"],
+        ["next", "Narrative work: from credit risk to specialty lines"],
+        ["next", "Comp expectations aligned before the first call"]
+      ],
+      draft: false
+    },
+    kkr: {
+      name: "KKR",
+      role: "Principal, Insurance Solutions",
+      chips: ["1 open role", "Comp $475-650K", "0 mutual contacts", "Signal: quiet"],
+      plan: [
+        ["done", "Insurance solutions team fully mapped"],
+        ["now", "Comp intel refresh landing this week"],
+        ["next", "Second degree search for a warm path"],
+        ["next", "Hold until the Apollo loop resolves"]
+      ],
+      draft: false
+    },
+    ow: {
+      name: "Oliver Wyman",
+      role: "Principal track, FS Practice",
+      chips: ["6 open roles", "Comp $260-380K", "5 mutual contacts", "Signal: seasonal"],
+      plan: [
+        ["done", "FS practice partners shortlisted"],
+        ["now", "Parked on the bench until the Q4 review"],
+        ["next", "Revisit once the finance loops close"]
+      ],
+      draft: false
+    }
+  };
+
+  var planName = $("#planName");
+  var planRole = $("#planRole");
+  var planChips = $("#planChips");
+  var planSteps = $("#planSteps");
+  var draftZone = $("#draftZone");
+  var lockNote = $("#lockNote");
+  var mailWin = $("#mailWin");
+  var mailBody = $("#mailBody");
+  var draftBtn = $("#draftBtn");
+  var copyBtn = $("#copyBtn");
+
+  var EMAIL = "Hi Maya,\n\nHope the quarter is treating you well. Apollo just opened a Director seat on the hybrid credit desk and it sits at the very top of my list. I saw you overlapped with Dan Reyes on that team.\n\nWould you be open to a two line intro? I will send a short blurb so it takes you thirty seconds. Coffee is on me next time you are near Bryant Park.\n\nJordan";
+  var typer = null;
+
+  function resetMail() {
+    if (typer) { clearInterval(typer); typer = null; }
+    if (mailWin) { mailWin.classList.remove("open"); mailWin.classList.remove("done"); }
+    if (mailBody) { mailBody.textContent = ""; }
+    if (draftBtn) { draftBtn.disabled = false; draftBtn.textContent = "Draft warm intro ◆"; }
+    if (copyBtn) { copyBtn.classList.remove("show"); copyBtn.textContent = "Copy draft"; }
+  }
+
+  function renderPlan(id) {
+    var c = COS[id];
+    if (!c || !planName) { return; }
+    planName.textContent = c.name;
+    planRole.textContent = c.role;
+    planChips.innerHTML = c.chips.map(function (x) {
+      return '<span class="chip">' + x + "</span>";
+    }).join("");
+    planSteps.innerHTML = c.plan.map(function (p) {
+      return '<li class="pstep ' + p[0] + '"><span class="s-ic" aria-hidden="true"></span><span class="s-tag">' + p[0] + '</span><span class="s-tx">' + p[1] + "</span></li>";
+    }).join("");
+    if (c.draft) {
+      draftZone.style.display = "";
+      lockNote.style.display = "none";
+    } else {
+      draftZone.style.display = "none";
+      lockNote.style.display = "";
+    }
+    resetMail();
+  }
+
+  $$(".co-row").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      $$(".co-row").forEach(function (b) {
+        b.classList.remove("active");
+        b.setAttribute("aria-selected", "false");
+      });
+      btn.classList.add("active");
+      btn.setAttribute("aria-selected", "true");
+      renderPlan(btn.getAttribute("data-co"));
+    });
+  });
+
+  renderPlan("apollo");
+
+  function finishDraft() {
+    if (mailWin) { mailWin.classList.add("done"); }
+    if (draftBtn) { draftBtn.textContent = "Drafted in 1.2s"; }
+    if (copyBtn) { copyBtn.classList.add("show"); }
+  }
+
+  if (draftBtn) {
+    draftBtn.addEventListener("click", function () {
+      mailWin.classList.add("open");
+      draftBtn.disabled = true;
+      draftBtn.textContent = "Drafting...";
+      if (reduced) {
+        mailBody.textContent = EMAIL;
+        finishDraft();
+        return;
+      }
+      var i = 0;
+      typer = setInterval(function () {
+        i += 2;
+        mailBody.textContent = EMAIL.slice(0, i);
+        if (i >= EMAIL.length) {
+          clearInterval(typer);
+          typer = null;
+          mailBody.textContent = EMAIL;
+          finishDraft();
+        }
+      }, 16);
+    });
+  }
+
+  if (copyBtn) {
+    copyBtn.addEventListener("click", function () {
+      function ok() {
+        copyBtn.textContent = "Copied ◆";
+        setTimeout(function () { copyBtn.textContent = "Copy draft"; }, 1800);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(EMAIL).then(ok, ok);
+      } else {
+        var ta = document.createElement("textarea");
+        ta.value = EMAIL;
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand("copy"); } catch (e) {}
+        document.body.removeChild(ta);
+        ok();
+      }
+    });
+  }
+
+  // -------- Join form --------
+  var form = $("#joinForm");
+  var formWrap = $("#formWrap");
+
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var name = $("#fName").value.trim();
+      var email = $("#fEmail").value.trim();
+      var level = $("#fLevel").value;
+      var track = $("#fTrack").value;
+      var linked = $("#fLinked").value.trim();
+      var targets = $("#fTargets").value.trim();
+
+      var emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      if (!name || !emailOk || !level || !track) {
+        if (!name) { $("#fName").focus(); }
+        else if (!emailOk) { $("#fEmail").focus(); }
+        else if (!level) { $("#fLevel").focus(); }
+        else { $("#fTrack").focus(); }
+        return;
+      }
+
+      var payload = { name: name, email: email, linkedin: linked, level: level, track: track, targets: targets };
+
+      if (FORM_ENDPOINT) {
+        try {
+          fetch(FORM_ENDPOINT, {
+            method: "POST",
+            headers: { "Content-Type": "application/json", "Accept": "application/json" },
+            body: JSON.stringify(payload)
+          }).catch(function () {});
+        } catch (err) {}
+      }
+
+      var okName = $("#okName");
+      var okEmail = $("#okEmail");
+      if (okName) { okName.textContent = name; }
+      if (okEmail) { okEmail.textContent = email; }
+      formWrap.classList.add("done");
+    });
+  }
+})();
+</script>
+</body>
+</html>
